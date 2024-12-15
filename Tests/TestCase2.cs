@@ -1,14 +1,23 @@
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using SeleniumTest.Pages;
+using WebDriverManager.DriverConfigs.Impl;
+using WebDriverManager;
 
 namespace SeleniumTest.Tests
 {
+    [TestFixture]
     public class TestCase2
     {
-        static void Main(string[] args)
+        [Test]
+        public void Test2()
         {
+            // Use WebDriverManager to handle ChromeDriver setup
+            new DriverManager().SetUpDriver(new ChromeConfig());
+
             IWebDriver driver = new ChromeDriver();
+
             try
             {
                 driver.Navigate().GoToUrl("http://jupiter.cloud.planittesting.com/#/home");

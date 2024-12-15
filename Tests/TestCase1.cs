@@ -1,13 +1,21 @@
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using SeleniumTest.Pages;
+using WebDriverManager;
+using WebDriverManager.DriverConfigs.Impl;
 
 namespace SeleniumTest.Tests
 {
+    [TestFixture]
     public class TestCase1
     {
-        static void Main(string[] args)
+        [Test]
+        public void Test1()
         {
+            // Use WebDriverManager to handle ChromeDriver setup
+            new DriverManager().SetUpDriver(new ChromeConfig());
+
             IWebDriver driver = new ChromeDriver();
             try
             {

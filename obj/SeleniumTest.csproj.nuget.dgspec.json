@@ -17,14 +17,14 @@
           "/Users/santhosh/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -41,8 +41,8 @@
         "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -50,7 +50,7 @@
             },
             "NUnit": {
               "target": "Package",
-              "version": "[4.2.2, )"
+              "version": "[4.3.0, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
@@ -60,9 +60,13 @@
               "target": "Package",
               "version": "[4.27.0, )"
             },
-            "Selenium.WebDriver.ChromeDriver": {
+            "SpecFlow": {
               "target": "Package",
-              "version": "[131.0.6778.10800, )"
+              "version": "[3.9.74, )"
+            },
+            "WebDriverManager": {
+              "target": "Package",
+              "version": "[2.17.4, )"
             }
           },
           "imports": [
